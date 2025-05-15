@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galeri Ijazah</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .modal {
+      display: none;
+    }
+    .modal.active {
+      display: flex;
+    }
+    .letter {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.letter h3 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.letter p {
+  max-width: 600px;
+  margin: auto;
+  color: #ddd;
+}
+
+  </style>
+</head>
+<body class="bg-black min-h-screen flex flex-col items-center p-6">
+  <h1 class="text-3xl font-bold mb-6 text-red-600">2022-2025</h1>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-5xl">
+    <!-- Gambar 1 -->
+    <div class="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
+      <img src="1.png" alt="Ijazah 1" class="w-full h-64 object-cover" onclick="openModal(this.src)" />
+    </div>
+
+    <!-- Gambar 2 -->
+    <div class="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
+      <img src="2.png" alt="Ijazah 2" class="w-full h-64 object-cover" onclick="openModal(this.src)" />
+    </div>
+    <!-- Gambar 2 -->
+    <div class="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
+      <img src="3.png" alt="Ijazah 2" class="w-full h-64 object-cover" onclick="openModal(this.src)" />
+    </div>
+    <!-- Gambar 2 -->
+    <div class="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
+      <img src="4.png" alt="Ijazah 2" class="w-full h-64 object-cover" onclick="openModal(this.src)" />
+    </div>
+    <!-- Gambar 2 -->
+    <div class="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
+      <img src="5.png" alt="Ijazah 2" class="w-full h-64 object-cover" onclick="openModal(this.src)" />
+    </div>
+    <!-- Gambar 2 -->
+    <div class="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
+      <img src="6.jpeg" alt="Ijazah 2" class="w-full h-64 object-cover" onclick="openModal(this.src)" />
+    </div>
+    <!-- Gambar 2 -->
+    <div class="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
+      <img src="7.jpeg" alt="Ijazah 2" class="w-full h-64 object-cover" onclick="openModal(this.src)" />
+    </div>
+    <!-- Gambar 2 -->
+    <div class="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
+      <img src="8.jpeg" alt="Ijazah 2" class="w-full h-64 object-cover" onclick="openModal(this.src)" />
+    </div>
+    <!-- Gambar 2 -->
+    <div class="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
+      <img src="9.png" alt="Ijazah 2" class="w-full h-64 object-cover" onclick="openModal(this.src)" />
+    </div>
+    <!-- Gambar 2 -->
+    <div class="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
+      <img src="10.png" alt="Ijazah 2" class="w-full h-64 object-cover" onclick="openModal(this.src)" />
+    </div>
+    <!-- Gambar 2 -->
+    <div class="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
+      <img src="11.png" alt="Ijazah 2" class="w-full h-64 object-cover" onclick="openModal(this.src)" />
+    </div>
+    <!-- Gambar 2 -->
+    <div class="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
+      <img src="12.png" alt="Ijazah 2" class="w-full h-64 object-cover" onclick="openModal(this.src)" />
+    </div>
+    <!-- Gambar 2 -->
+    <div class="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
+      <img src="19.png" alt="Ijazah 2" class="w-full h-64 object-cover" onclick="openModal(this.src)" />
+    </div>
+    <!-- Gambar 2 -->
+    <div class="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
+      <img src="VSL07957.jpg" alt="Ijazah 2" class="w-full h-64 object-cover" onclick="openModal(this.src)" />
+    </div>
+    <!-- Gambar 2 -->
+    <div class="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
+      <img src="KTR09998.jpg" alt="Ijazah 2" class="w-full h-64 object-cover" onclick="openModal(this.src)" />
+    </div>
+    
+    <!-- Tambah gambar lainnya sesuai kebutuhan -->
+  </div>
+  <section class="letter">
+      <h3>Terima kasih untuk semua kenangan indah di kelas ini, sukses di jalan masing-masing.</h3>
+    </section>
+
+  <!-- Modal untuk zoom gambar -->
+  <div id="modal" class="modal fixed inset-0 bg-black bg-opacity-80 justify-center items-center z-50">
+    <img id="modal-img" class="max-w-full max-h-full rounded-lg border-4 border-white" />
+    <button onclick="closeModal()" class="absolute top-4 right-4 text-white text-2xl font-bold">&times;</button>
+  </div>
+
+  <script>
+    function openModal(src) {
+      document.getElementById("modal-img").src = src;
+      document.getElementById("modal").classList.add("active");
+    }
+
+    function closeModal() {
+      document.getElementById("modal").classList.remove("active");
+    }
+  </script>
+</body>
+</html>
