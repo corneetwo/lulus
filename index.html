@@ -75,6 +75,21 @@ nav a:hover {
   border-radius: 8px;
 }
 
+.parallax {
+ /* Efek parallax */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  text-shadow: 1px 1px 3px black;
+}
+
 .slider {
   position: relative;
   display: flex;
@@ -177,7 +192,7 @@ footer {
       </header>
 
   <main>
-    <section onclick="toggleMusic()" class="hero">
+    <section onclick="toggleMusic()" class="hero parallax">
       <h2>CORNEETWO 22</h2>
     </section>
 
@@ -211,11 +226,31 @@ footer {
     </section>
 
     <section class="letter">
-      <h3>SEE YOU LETTER</h3>
+      <h1 class="text-3xl font-bold mb-6">SEE YOU AGAIN</h1>
+    </section>
+
+     <section class="bg-black flex flex-col items-center">
+        <h2 class="text-2xl">TEACHER</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-5xl">
+            <!-- Gambar 1 -->
+            <div class="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
+            <img src="" alt="" class="bg-black h-64 object-cover" onclick="openModal(this.src)" />
+            </div>
+            <!-- Gambar 1 -->
+            <div class="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
+            <img src="ijasah/paksis.jpg" alt="Ijazah 1" class="w-full h-64 object-cover" onclick="openModal(this.src)">
+            </div>
+            <!-- Gambar 1 -->
+            <div class="bg-black rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
+              <img src="" alt="" class="bg-black h-64 object-cover" onclick="openModal(this.src)" /></div>  
+    </section>
+    <section class="letter">
+      <h3>PAK SISWANTO</h3>
     </section>
 
     <section class="bg-black min-h-screen flex flex-col items-center p-6">
-        <h1 class="text-3xl font-bold mb-6">Galeri Foto Ijazah</h1>
+        <h1 class="text-3xl font-bold mb-6">MEMBER</h1>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-5xl">
             <!-- Gambar 1 -->
@@ -246,6 +281,10 @@ footer {
             <!-- Gambar 2 -->
             <div class="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
             <img src="ijasah/ELIZA ZAHROTTUSSITA.jpg" alt="Ijazah 2" class="w-full h-64 object-cover" onclick="openModal(this.src)" />
+            </div>
+          <!-- Gambar 2 -->
+            <div class="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
+            <img src="ijasah/ELSA OKTA ARMARIFKA.jpg" alt="Ijazah 2" class="w-full h-64 object-cover" onclick="openModal(this.src)" />
             </div>
             <!-- Gambar 2 -->
             <div class="bg-white rounded-lg shadow hover:shadow-lg cursor-pointer overflow-hidden">
