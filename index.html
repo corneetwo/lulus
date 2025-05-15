@@ -75,6 +75,21 @@ nav a:hover {
   border-radius: 8px;
 }
 
+.parallax {
+ /* Efek parallax */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  text-shadow: 1px 1px 3px black;
+}
+
 .slider {
   position: relative;
   display: flex;
@@ -177,7 +192,7 @@ footer {
       </header>
 
   <main>
-    <section onclick="toggleMusic()" class="hero">
+    <section onclick="toggleMusic()" class="hero parallax">
       <h2>CORNEETWO 22</h2>
     </section>
 
